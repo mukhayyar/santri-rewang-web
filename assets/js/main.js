@@ -119,5 +119,8 @@ function kirimPesan() {
   var instansi = document.getElementById("input_instansi").value;
   var proyek = document.getElementById("input_proyek").value;
   var nomor = document.getElementById("input_nomor").value;
-  window.open(`mailto:m3g3nz2@gmail.com?subject=Testttt&body=Halo saya ${nama} dari ${instansi} tertarik untuk membuat proyek ${proyek} bersama Santri Rewang. Untuk kerjasama lebih lanjut bisa menghubungi nomor saya di ${nomor}`);
+  var pesan = document.getElementById("input_pesan").value;
+  window.open(
+    `mailto:m3g3nz2@gmail.com?subject=Testttt&body=Halo saya ${nama} dari ${instansi} tertarik untuk membuat proyek ${proyek} bersama Santri Rewang. Untuk kerjasama lebih lanjut bisa menghubungi nomor saya di ${nomor}. Pesan tambahan ${pesan}`
+  );
 }
