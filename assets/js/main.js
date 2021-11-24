@@ -126,5 +126,5 @@ function kirimPesan() {
   } else {
     elem = document.getElementById("input_pesan").value;
   }
-  window.open(`mailto:m3g3nz2@gmail.com?subject=Testttt&body=Halo saya ${nama} dari ${instansi} tertarik untuk membuat proyek ${proyek} bersama Santri Rewang. Untuk kerjasama lebih lanjut bisa menghubungi nomor saya di ${nomor}. Pesan tambahan: ${elem}`);
+  window.open(`mailto:m3g3nz2@gmail.com?subject=Tawaran Kerjasama Proyek ${proyek} - ${instansi}&body=Halo saya ${nama} dari ${instansi} tertarik untuk membuat proyek ${proyek} bersama Santri Rewang. Untuk kerjasama lebih lanjut bisa menghubungi nomor saya di ${nomor}. Pesan tambahan: ${elem}`);
 }
