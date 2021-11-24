@@ -316,20 +316,20 @@
               </div>
             </div>
           </div>
-          <form action="mailto:m3g3nz2@gmail.com" class="contact__form">
+          <form class="contact__form" id="contact_form">
             <div class="contact__inputs">
-              <input type="text" placeholder="Nama" class="contact__input" />
-              <input type="email" placeholder="Email" class="contact__input" />
+              <input type="text" placeholder="Nama" class="contact__input" id="input_nama" />
+              <input type="text" placeholder="Instansi" class="contact__input" id="input_instansi" />
             </div>
 
             <div class="contact__inputs">
-              <input type="text" placeholder="Proyek" class="contact__input" />
-              <input type="number" placeholder="Nomor" class="contact__input" />
+              <input type="text" placeholder="Proyek" class="contact__input" id="input_proyek" />
+              <input type="number" placeholder="Nomor" class="contact__input" id="input_nomor" />
             </div>
 
             <textarea name="" id="" cols="0" rows="7" placeholder="Pesan" class="contact__input"></textarea>
 
-            <input type="submit" value="Kirim Pesan" class="button contact__button" />
+            <input type="button" class="button contact__button" value="Kirim Pesan" onclick="kirimPesan()" />
           </form>
         </div>
       </section>

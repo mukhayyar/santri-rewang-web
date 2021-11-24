@@ -113,3 +113,11 @@ gsap.from(".about__description, .about__number, .about__achievement, .about__img
 gsap.from(".qualification__title, .qualification__area, .qualification__box ", { scrollTrigger: { trigger: ".qualification__title" }, opacity: 0, duration: 3, y: 25, ease: "expo.out", stagger: 0.2 });
 
 gsap.from(".services__data, .services__icon, .services__title, .services__description ", { scrollTrigger: { trigger: ".services__data" }, opacity: 0, duration: 3, y: 25, ease: "expo.out", stagger: 0.2 });
+
+function kirimPesan() {
+  var nama = document.getElementById("input_nama").value;
+  var instansi = document.getElementById("input_instansi").value;
+  var proyek = document.getElementById("input_proyek").value;
+  var nomor = document.getElementById("input_nomor").value;
+  window.open(`mailto:m3g3nz2@gmail.com?subject=Testttt&body=Halo saya ${nama} dari ${instansi} tertarik untuk membuat proyek ${proyek} bersama Santri Rewang. Untuk kerjasama lebih lanjut bisa menghubungi nomor saya di ${nomor}`);
+}
